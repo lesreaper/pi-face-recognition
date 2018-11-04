@@ -46,3 +46,5 @@ source ~/.profile
 workon cv
 echo "[Complete]: Test your OpenCV install by typing 'python', 'import cv2', and then 'cv2.__version__'"
 echo "[Complete]: It should say: 3.4.0"
+echo "[Complete]: If the command 'python' loads Python 2.7.*, this is wrong. The virtual environment didn't load. "
+echo "[Complete]: Type: 'source ~/.profile' and 'workon cv'. Then, try again."
