@@ -20,6 +20,7 @@ workon cv
 You'll need to download some pictures of yourself, and put them in a folder you create with your name. If your name is Rich, and you downloaded images of yourself from the internet to your Downloads folder as "image1.jpg", etc, you would do that this way:
 
 ```
+workon cv
 cd ~/pi-face-recognition/dataset
 mkdir Rich
 cd ~/Downloads
