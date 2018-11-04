@@ -24,7 +24,7 @@ cd ~/pi-face-recognition/dataset
 mkdir Rich
 cd ~/Downloads
 sudo mv image1.jpg ~/pi-face-recognition/dataset/Rich
-repeat for each image, or you can drag and drop via the file explorer icon in your top toolbar
+repeat the line above for each image, or you can drag and drop your downloaded images via the file explorer icon in your top toolbar
 ```
 
 Then, create your embeddings:
@@ -41,10 +41,10 @@ python pi_face_recognition.py --cascade haarcascade_frontalface_default.xml --en
 
 To run on a single image:
 ```
-python pi_face_recognition_image.py --cascade haarcascade_frontalface_default.xml --encodings encodings.pickle` --image 6892945.jpeg
+python pi_face_recognition_image.py --cascade haarcascade_frontalface_default.xml --encodings encodings.pickle --image 6892945.jpeg
 ```
 
-You can download your own image and replace it above.
+You can download your own image for testing and replace the image name above (6892945.jpeg) with your downloaded image name (the path is relative to the location of the pi_face_recognition*.py file).
 
 This is all taken for the most part from Adrian's awesome blog here:
 https://www.pyimagesearch.com/2018/06/25/raspberry-pi-face-recognition/
