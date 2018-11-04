@@ -23,7 +23,6 @@ echo "export WORKON_HOME=$HOME/.virtualenvs" >> ~/.profile
 echo "source /usr/local/bin/virtualenvwrapper.sh" >> ~/.profile
 source ~/.profile
 mkvirtualenv cv -p python3
-source ~/.profile
 workon cv
 pip install numpy
 cd ~/opencv-3.4.0/
@@ -43,5 +42,7 @@ sudo mv cv2.cpython-35m-arm-linux-gnueabihf.so cv2.so
 cd ~/.virtualenvs/cv/lib/python3.5/site-packages/
 ln -s /usr/local/lib/python3.5/site-packages/cv2.so cv2.so
 cd ~
+source ~/.profile
+workon cv
 echo "[Complete]: Test your OpenCV install by typing 'python', 'import cv2', and then 'cv2.__version__'"
 echo "[Complete]: It should say: 3.4.0"
