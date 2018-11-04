@@ -29,8 +29,9 @@ sudo mv image1.jpg ~/pi-face-recognition/dataset/Rich/image1.jpg
 --repeat the line above for each image, or you can drag and drop your downloaded images via the file explorer icon in your top toolbar
 ```
 
-Then, create your embeddings:
+Then, once you have all the images of you in your labeled folder, create your embeddings:
 ```
+cd ~/pi-face-recognition/
 python encode_faces.py --dataset dataset --encodings encodings.pickle \
 	--detection-method hog
 ``` 
