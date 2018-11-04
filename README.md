@@ -23,7 +23,7 @@ You'll need to download some pictures of yourself, and put them in a folder you 
 cd ~/pi-face-recognition/dataset
 mkdir Rich
 cd ~/Downloads
-sudo mv image1.jpg ~/pi-face-recognition/dataset/Rich
+sudo mv image1.jpg ~/pi-face-recognition/dataset/Rich/image1.jpg
 repeat the line above for each image, or you can drag and drop your downloaded images via the file explorer icon in your top toolbar
 ```
 
