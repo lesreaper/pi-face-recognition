@@ -17,7 +17,7 @@ workon cv
 
 # Once OpenCV is installed
 
-You'll need to download some pictures of yourself, and put them in a folder you create with your name. If your name is Rich,and your downloaded your images from the internet to your Downloads folder as "image1.jpg", etc, you would do that this way:
+You'll need to download some pictures of yourself, and put them in a folder you create with your name. If your name is Rich, and you downloaded images of yourself from the internet to your Downloads folder as "image1.jpg", etc, you would do that this way:
 
 ```
 cd ~/pi-face-recognition/dataset
@@ -32,6 +32,7 @@ Then, create your embeddings:
 python encode_faces.py --dataset dataset --encodings encodings.pickle \
 	--detection-method hog
 ``` 
+
 Finally, you're ready to run your webcam, or run it on an image to test it.
 To run on webcam:
 ```
@@ -42,6 +43,7 @@ To run on a single image:
 ```
 python pi_face_recognition_image.py --cascade haarcascade_frontalface_default.xml --encodings encodings.pickle` --image 6892945.jpeg
 ```
+
 You can download your own image and replace it above.
 
 This is all taken for the most part from Adrian's awesome blog here:
