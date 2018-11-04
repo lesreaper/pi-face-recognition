@@ -1,3 +1,5 @@
+"[Start]: Go do something else, this is going to take awhile..."
+cd ~
 sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt-get install build-essential cmake pkg-config -y
@@ -34,3 +36,12 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
     -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib-3.4.0/modules \
     -D BUILD_EXAMPLES=ON ..
 make
+sudo make install
+sudo ldconfig
+cd /usr/local/lib/python3.5/site-packages/
+sudo mv cv2.cpython-35m.so cv2.so
+cd ~/.virtualenvs/cv/lib/python3.5/site-packages/
+ln -s /usr/local/lib/python3.5/site-packages/cv2.so cv2.so
+cd ~
+"[Complete]: Test your OpenCV install by typing 'python', 'import cv2', and then 'cv2.__version__'"
+"[Complete]: It should say: 3.4.0"
