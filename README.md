@@ -23,9 +23,10 @@ You'll need to download some pictures of yourself, and put them in a folder you 
 workon cv
 cd ~/pi-face-recognition/dataset
 mkdir Rich
+--go and fetch your images and either save them to ~/pi-face-recognition/dataset/Rich/ or Downloads if you can't customize the download path
 cd ~/Downloads
 sudo mv image1.jpg ~/pi-face-recognition/dataset/Rich/image1.jpg
-repeat the line above for each image, or you can drag and drop your downloaded images via the file explorer icon in your top toolbar
+--repeat the line above for each image, or you can drag and drop your downloaded images via the file explorer icon in your top toolbar
 ```
 
 Then, create your embeddings:
