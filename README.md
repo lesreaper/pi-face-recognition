@@ -15,6 +15,10 @@ This will create a virtual environment called "cv". So, anytime you want to work
 workon cv
 ```
 
+If this fails, go ahead and restart your terminal, or type:
+
+```source ~/.profile```
+
 # Once OpenCV is installed
 
 You'll need to download some pictures of yourself, and put them in a folder you create with your name. If your name is Rich, and you downloaded images of yourself from the internet to your Downloads folder as "image1.jpg", etc, you would do that this way:
